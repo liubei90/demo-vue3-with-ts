@@ -7,12 +7,19 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+// webpack打包时会通过dll的dll-manifest.json导入dll目录下的模块
+import alpha from '../../../dll/alpha';
+import { sayHello } from '../../../dll/index';
+import HelloWorld from '../components/HelloWorld.vue';
 
 export default defineComponent({
   name: 'Home',
   components: {
     HelloWorld,
+  },
+  setup() {
+    sayHello();
+    console.log(alpha);
   },
 });
 </script>

@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "dll": "webpack --config webpack.dll.config.js",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "commit": "cz",
@@ -37,17 +38,25 @@
     "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^7.0.0-0",
+    "glob": "^7.1.6",
     "html-webpack-externals-plugin": "^3.8.0",
+    "html-webpack-tags-plugin": "^2.0.17",
     "husky": "^4.3.6",
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
     "typescript": "~3.9.3",
     "validate-commit-msg": "^2.14.0",
-    "vue-jest": "^5.0.0-0"
+    "vue-jest": "^5.0.0-0",
+    "webpack-cli": "^4.3.1"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "vuePlugins": {
+    "service": [
+      "multi_pages_pack.js"
+    ]
   }
 }

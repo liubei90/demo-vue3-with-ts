@@ -1,0 +1,1 @@
+{"name":"dll_9073a","content":{"./dll/index.ts":{"id":1,"buildMeta":{"tsLoaderFileVersion":1,"exportsType":"namespace","providedExports":["sayHello","registPlugins"]}},"./dll/alpha.js":{"id":2,"buildMeta":{"exportsType":"namespace","providedExports":["default"]}}}}
