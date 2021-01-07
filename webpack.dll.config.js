@@ -6,7 +6,7 @@ const webpack = require('webpack');
 module.exports = {
   mode: 'none',
   entry: {
-    dll: ['./dll/index.ts', './dll/alpha.js'],
+    dll: ['./dll/index.ts', './dll/alpha.ts'],
   },
   output: {
     path: path.join(__dirname, 'dll/dist/'),

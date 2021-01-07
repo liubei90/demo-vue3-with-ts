@@ -1,9 +1,8 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable @typescript-eslint/no-var-requires */
 
 const glob = require('glob');
-// eslint-disable-next-line import/no-extraneous-dependencies
 const webpack = require('webpack');
-// eslint-disable-next-line import/no-extraneous-dependencies
 const CopyPlugin = require('copy-webpack-plugin');
 const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin');
 const HtmlWebpackTagsPlugin = require('html-webpack-tags-plugin');
@@ -85,12 +84,21 @@ module.exports = (api, options) => {
             // 在html文件中引入dll文件
             // FIXME: 版本号是否可以自动修改
             new HtmlWebpackTagsPlugin({
-              tags: ['dll/dll_9073a.js'],
+              tags: ['dll/dll_e73b9.js'],
               append: false,
               files: ['index.html'],
             }),
           ] : []),
         ],
+        optimization: {
+          // 禁用vendors 和 common
+          splitChunks: {
+            cacheGroups: {
+              vendors: false,
+              common: false,
+            },
+          },
+        },
       });
 
       return fn(args, rawArgs).then((res) => {
