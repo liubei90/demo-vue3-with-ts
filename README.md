@@ -1,5 +1,6 @@
 # demo-vue3-with-ts
 [![Build Status](https://travis-ci.org/liubei90/demo-vue3-with-ts.svg?branch=master)](https://travis-ci.org/liubei90/demo-vue3-with-ts)
+[![Coverage Status](https://coveralls.io/repos/github/liubei90/demo-vue3-with-ts/badge.svg)](https://coveralls.io/github/liubei90/demo-vue3-with-ts)
 
 ## Project setup
 ```
