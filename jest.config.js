@@ -3,4 +3,8 @@ module.exports = {
   transform: {
     '^.+\\.vue$': 'vue-jest',
   },
+  collectCoverage: true,
+  coveragePathIgnorePatterns: [
+    '/node_modules/',
+  ],
 };

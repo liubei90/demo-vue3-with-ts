@@ -1,4 +1,5 @@
 # demo-vue3-with-ts
+[![Build Status](https://travis-ci.org/liubei90/demo-vue3-with-ts.svg?branch=master)](https://travis-ci.org/liubei90/demo-vue3-with-ts)
 
 ## Project setup
 ```
