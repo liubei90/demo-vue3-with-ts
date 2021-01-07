@@ -111,4 +111,16 @@ module.exports = (api, options) => {
 
   build.fn = createServeOrBuildFn('build', build.fn, options);
   serve.fn = createServeOrBuildFn('serve', serve.fn, options);
+
+  // 补充单元测试命令的pages选项
+  // FIXME： 是否所有命令都需要补充pages选项
+  // const testUnit = api.service.commands['test:unit'];
+  // const testUnitFn = testUnit.fn;
+
+  // testUnit.fn = (args, rawArgs) => {
+  //   // eslint-disable-next-line no-param-reassign
+  //   options.pages = getPages(args);
+  //   console.log(options.pages);
+  //   return testUnitFn(args, rawArgs);
+  // };
 };
