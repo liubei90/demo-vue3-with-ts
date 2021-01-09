@@ -1,7 +1,7 @@
 import { shallowMount } from '@vue/test-utils';
-import App from '@/page1/App';
+import App from '@/empty/App';
 
-describe('page1', () => {
+describe('empty', () => {
   it('renders App.vue', () => {
     const wrapper = shallowMount(App);
 
